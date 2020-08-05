@@ -1,0 +1,60 @@
+\documentclass[a4paper]{article}
+\usepackage{polski}
+\usepackage{lscape}
+\usepackage{mathptmx}   %fancy font-thing
+\usepackage[dvipsnames]{xcolor} % colour
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage[utf8x]{inputenc}    %%tego potrzebuję do pl znaków
+\usepackage{wallpaper} %for honest work
+
+\usepackage{listings}
+\lstset{
+  literate={ą}{{\k a}}1
+  		     {Ą}{{\k A}}1
+           {ż}{{\. z}}1
+           {Ż}{{\. Z}}1
+           {ź}{{\' z}}1
+           {Ź}{{\' Z}}1
+           {ć}{{\' c}}1
+           {Ć}{{\' C}}1
+           {ę}{{\k e}}1
+           {Ę}{{\k E}}1
+           {ó}{{\' o}}1
+           {Ó}{{\' O}}1
+           {ń}{{\' n}}1
+           {Ń}{{\' N}}1
+           {ś}{{\' s}}1
+           {Ś}{{\' S}}1
+           {ł}{{\l}}1
+           {Ł}{{\L}}1
+}
+
+%==============EDIT THIS SECTION================
+\newcommand{\weekNumber}{31}
+\newcommand{\SundayDate}{26.07.20 r.}
+\newcommand{\WL}{Początki pracy inżynierskiej}
+\newcommand{\ML}{QSP: finish}
+%===============================================
+
+
+%\ThisLRCornerWallPaper{1}{honest_work.png}
+\title{Weekly \& Monthly Lantern}   %% tu potrzebuję '\' przed '&', żeby go wyświetlił
+\begin{document}
+\begin{landscape}
+\thispagestyle{empty}   %no page counter
+\#\weekNumber
+\hfill
+\SundayDate
+\bigskip \bigskip \bigskip \bigskip \bigskip \bigskip
+\begin{center}
+%\fontsize{70}{}
+\fontsize{50}{0}\selectfont \textbf{WL: \WL}
+\newline
+\fontsize{40}{0}\selectfont
+%[You're not for the plan.]
+
+\vspace{7cm} %blank line needs to be there for this command to work
+\fontsize{50}{0}\selectfont \textbf{\textcolor{gray}{ML: \ML}}
+\end{center}
+\end{landscape}
+\end{document}
